@@ -1,5 +1,5 @@
 # Creating class Staff - (inherits from People) + salary, position
-from people import People
+from source.people import People
 
 class Staff(People):
     # Function to create class with 8 attributes

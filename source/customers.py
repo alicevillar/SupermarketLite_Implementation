@@ -1,6 +1,6 @@
 
 # Creating class Customers - (inherits from People) + purchaseHistory
-from people import People
+from source.people import People
 
 class Customers(People):
     def __init__(self, name, id, phone, address, username, password, purchaseHistory):
