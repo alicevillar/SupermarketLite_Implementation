@@ -1,4 +1,4 @@
-###Supermarket Lite
+#Supermarket Lite
 
  
 This class diagram has 8 classes. I have applied generalization, composition, aggregation, and direct association. THis repository contains the implementation in Python and the database using SQL. 
