@@ -1,9 +1,11 @@
-#Supermarket Lite
+# Supermarket Lite
 
 This repository contains the implementation in Python and the database using SQL. 
  
 The class diagram has 8 classes. I have applied generalization, composition, aggregation, and direct association.  Next, I describe the four different diagram relationships and indicate the classes of the Supermarket diagram that belong to each category. 
  
+## Diagram description
+
 Generalization/inheritance:    
 
 * People & Staff (the attributes listed in the class "People" are applied to the class Customers) 
