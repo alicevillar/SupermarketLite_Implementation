@@ -5,18 +5,18 @@ This class diagram has 8 classes. I have applied generalization, composition, ag
 
 Next, I describe the four different diagram relationships and indicate the classes of the Supermarket diagram that belong to each category. 
  
-1)      Generalization/inheritance:    
+- Generalization/inheritance:    
 
 * People & Staff (the attributes listed in the class "People" are applied to the class Customers) 
 * People & Customers (the attributes listed in the class "People" are applied in the class Staff)       
 
-2)    Composition:  
+- Composition:  
 
 * Customers & Shopping Cart (customer always has a shopping cart)
 * Loyalty Schemes & Payment (loyalty schemes always create discounts in payments) 
 * Customers & Online Order (customers always have online orders) 
 
-3)      Aggregation:  
+- Aggregation:  
 
 
 * Products & Shopping Cart (Products can be included in Shopping Carts) 
@@ -26,7 +26,7 @@ Next, I describe the four different diagram relationships and indicate the class
 * Online Orders & Payment (Online orders can lead to payment or not)
 
 
-4)      Direct Association: Refers to a directional relationship represented by a line with an arrowhead.
+- Direct Association: Refers to a directional relationship represented by a line with an arrowhead.
 
 * Staff  & Online Orders  (Staff members manage Products)
 
