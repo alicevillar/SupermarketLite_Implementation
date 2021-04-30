@@ -7,7 +7,12 @@ This is a personal project to practice class diagram implementation in Python (O
  
 ## Directory 3: Diagrams  
 
-### Class Diagram description
+### a) EER diagram created in SQL Server (EER_Diagram_SQL_Server.png)
+
+![class diagram](EER_Diagram_SQL_Server.png)
+
+
+### b) Class diagram created with StarUML
 
 The class diagram has 8 classes. I have applied generalization, composition, aggregation, and direct association.  Next, I describe the four different diagram relationships and indicate the classes of the Supermarket diagram that belong to each category. 
 
