@@ -9,8 +9,7 @@ This is a personal project to practice class diagram implementation in Python (O
 
 ### a) EER diagram created in SQL Server (EER_Diagram_SQL_Server.png)
 
-![class diagram](EER_Diagram_SQL_Server.png)
-
+![EER Diagram](diagrams/EER_Diagram_SQL_Server.png)
 
 ### b) Class diagram created with StarUML
 
