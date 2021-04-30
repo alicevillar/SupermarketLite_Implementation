@@ -7,7 +7,7 @@ This is a personal project to practice class diagram implementation in Python (O
  
 ## Directory 3: Diagrams  
 
-### a) EER diagram created in SQL Server (EER_Diagram_SQL_Server.png)
+### a) EER diagram created in SQL Server 
 
 ![EER Diagram](diagrams/EER_Diagram_SQL_Server.png)
 
