@@ -2,8 +2,27 @@
 
 This is a personal project to practice class diagram implementation in Python (OOP) and the database using SQL (MySQL and SQL Server). 
 * Directory 1: source -> contains files with OOP in Python
-* Directory 2: sql -> contains the normalization (3fn) of the database in two versions: MySQL and SQL Server. The goal is to practice the syntax differece between these two tools. 
-* Directory 3: diagrams -> contains: a) EER diagram created in SQL Server (EER_Diagram_SQL_Server.png), b) Class diagram created with StarUML (Supermarket_Class_Diagram_UML.png)
+* Directory 2: sql -> contains the normalization (3fn) of the database in two versions 
+* Directory 3: diagrams -> contains: a) EER diagram created in SQL Server, b) Class diagram created with StarUML 
+
+## Directory 1: Source  
+
+* main.py -> contains tests 
+* people_db.py -> contains 
+
+Supermarket Lite has 7 CLASSES:
+* customers.py 
+* loyaltyschemes.py 
+* payment.py 
+* people.py 
+* products.py 
+* shoppingcart.py 
+* staff.py 
+
+
+## Directory 2: SQL   
+
+Contains the normalization (3fn) of the database in two versions: MySQL and SQL Server. The goal is to practice the syntax differece between these two tools. 
  
 ## Directory 3: Diagrams  
 
