@@ -7,8 +7,8 @@ This is a personal project to practice class diagram implementation in Python (O
 
 ## Directory 1: Source  
 
-* main.py -> contains tests 
-* people_db.py -> contains 
+* main.py -> tests 
+* people_db.py -> connects to MySQL using Python  
 
 Supermarket Lite has 7 CLASSES:
 * customers.py 
