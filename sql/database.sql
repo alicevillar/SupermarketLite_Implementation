@@ -89,12 +89,13 @@ foreign key (Loyalty_Id) references Loyalty_schemes (Loyalty_Id),
 foreign key (Card_Id) references Stored_Cards (Card_Id)
 );
 
-CREATE TABLE Products (
-Product_cod int not null auto_increment,
-Product_name varchar (50),
-Category_cod int not null,
-primary key (Product_cod),
-foreign key (Category_cod) references Category (Category_cod)
+CREATE TABLE products (
+Product_cod int NOT NULL AUTO_INCREMENT,
+Product_name varchar(400) DEFAULT NULL,
+Category_cod int NOT NULL,
+PRIMARY KEY (Product_cod),
+KEY `Category_cod` (Category_cod),
+FOREIGN KEY (`Category_cod`) REFERENCES `category` (`Category_cod`)
 );
 
 CREATE TABLE Staff (

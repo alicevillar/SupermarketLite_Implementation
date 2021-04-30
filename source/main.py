@@ -9,7 +9,7 @@
 # OnlineOrders- id
 # Payment - id
 
-from source.database.people_db import PersonDB
+from source.people_db import PersonDB
 
 #Testing code:
 
