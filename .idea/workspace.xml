@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a456480f-4ee0-46eb-893a-5729e5a07760" name="Default Changelist" comment="" />
+    <list default="true" id="a456480f-4ee0-46eb-893a-5729e5a07760" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Supermarket_lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
@@ -139,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619776561513</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="files">
+      <created>1619783064058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619783064058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -159,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Including SQL Server Script and new file people_DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Including SQL Server Script and new file people_DB" />
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1242" height="166" key="GridCell.Tab.0.bottom" timestamp="1618511566681">
@@ -182,9 +196,9 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="143" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1617991004003" />
-    <state x="232" y="117" key="Vcs.Push.Dialog.v2" timestamp="1619776576382">
+    <state x="232" y="117" key="Vcs.Push.Dialog.v2" timestamp="1619783063797">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="232" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1619776576382" />
+    <state x="232" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.690@0.0.1280.690" timestamp="1619783063797" />
   </component>
 </project>
