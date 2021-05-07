@@ -2,7 +2,7 @@
 CREATE DATABASE Supermarket_Database;
 USE Supermarket_Database;
 
-
+ 
 CREATE TABLE TB_Person (
 Per_Code int identity(1,1),
 Per_Name varchar (300) not null,
@@ -11,14 +11,14 @@ Per_E_mail varchar (100) not null,
 Per_Username varchar (20) not null,
 Password varchar (20) not null,
 constraint PK_Person primary key clustered (Per_Code)
-);
+); 
 
 CREATE TABLE TB_Category (
 Cat_Code int identity (1,1),
 Cat_Name varchar (300) not null,
 constraint PK_Category primary key clustered (Cat_Code)
 );
-
+ 
 CREATE TABLE TB_Position (
 Pos_Code int identity (1,1),
 Pos_Description varchar (500) not null,
@@ -37,7 +37,7 @@ Tic_Due_Date date,
 Tic_Value decimal,
 constraint PK_Ticket primary key clustered (Tic_Id)
 );
-
+ 
 CREATE TABLE TB_Stored_Cards (
 StC_Id int identity (1,1),
 StC_Code int not null,
@@ -60,7 +60,7 @@ constraint PK_Loyalty_Schemes primary key (LoS_Id),
 constraint FK_Loyalty_Schemes_Loyalty_Origin foreign key (LoS_Cause_Id) references TB_Loyalty_Origin (LoO_Id)
 );
 
-
+  
 CREATE TABLE TB_Online_Order (
 OnO_Id int identity (1,1),
 OnO_Date date,
@@ -74,10 +74,10 @@ constraint FK_Online_Order_Customer foreign key (OnO_Customer_Code) references T
 
 CREATE TABLE TB_Payment (
 Pay_Online_Order_Id int not null,
-Pay_Date date,
+Pay_Date date,  
 constraint FK_Payment_Online_Order foreign key (Pay_Online_Order_Id) references TB_Online_Order (OnO_Id)
 );
-alter table TB_Payment add Pay_Type int not null
+alter table TB_Payment add Pay_Type int not null  
 alter table TB_Payment add constraint FK_Payment_Payment_Type foreign key (Pay_Type) references TB_Payment_Type (PaT_Id)
 alter table TB_Payment add constraint PK_Payment primary key (Pay_Online_Order_Id)
 
@@ -91,7 +91,7 @@ PaT_Card_Id int not null,
 constraint PK_Payment_Type primary key (PaT_Id),
 constraint FK_Payment_Type_Ticket foreign key (PaT_Ticket_Id) references TB_Ticket  (Tic_Id),
 constraint FK_Payment_Type_Loyalty_Schemes foreign key (PaT_Loyalty_Id) references TB_Loyalty_Schemes (LoS_Id),
-constraint FK_Payment_Type_Stored_Cards foreign key (PaT_Card_Id) references TB_Stored_Cards (StC_Id)
+constraint FK_Payment_Type_Stored_Cards foreign key (PaT_Card_Id) references TB_Stored_Cards (StC_Id) 
 );
 
 CREATE TABLE TB_Products (
@@ -102,7 +102,7 @@ constraint PK_Products primary key (Pro_Code),
 constraint FK_Products_Category foreign key (Pro_Category_Code) references TB_Category (Cat_Code)
 );
 
-
+ 
 CREATE TABLE TB_Staff (
 Sta_Salary decimal,
 Sta_Position_Code int not null,

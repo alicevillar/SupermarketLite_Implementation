@@ -1,10 +1,38 @@
 # Supermarket Lite
 
-This repository contains the implementation in Python and the database using SQL. 
+This is a personal project to practice class diagram implementation in Python (OOP) and the database using SQL (MySQL and SQL Server). 
+* Directory 1: source -> contains files with OOP in Python
+* Directory 2: sql -> contains the normalization (3fn) of the database in two versions 
+* Directory 3: diagrams -> contains: a) EER diagram created in SQL Server, b) Class diagram created with StarUML 
+
+## Directory 1: Source  
+
+* main.py -> tests 
+* people_db.py -> connects to MySQL using Python  
+
+Supermarket Lite has 7 CLASSES:
+* customers.py 
+* loyaltyschemes.py 
+* payment.py 
+* people.py 
+* products.py 
+* shoppingcart.py 
+* staff.py 
+
+
+## Directory 2: SQL   
+
+Contains the normalization (3fn) of the database in two versions: MySQL and SQL Server. The goal is to practice the syntax differece between these two tools. 
  
+## Directory 3: Diagrams  
+
+### a) EER diagram created in SQL Server 
+
+![EER Diagram](diagrams/EER_Diagram_SQL_Server.png)
+
+### b) Class diagram created with StarUML
+
 The class diagram has 8 classes. I have applied generalization, composition, aggregation, and direct association.  Next, I describe the four different diagram relationships and indicate the classes of the Supermarket diagram that belong to each category. 
- 
-## Diagram description
 
 Generalization/inheritance:    
 
