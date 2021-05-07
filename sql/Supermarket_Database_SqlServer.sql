@@ -1,13 +1,7 @@
--- nome de tabela : leva TB_
--- nome de campo
--- nome de primary key: leva PK_ (nome da tabela, pq eh a PK da tabela) 
--- nome de foreign key: leva FK_ (leva o nome do relacionamento: nome das duas tabelas)
-
---A primary key tem seu nome com referencia `a tabela de onde ela pertence (CONSTRAINT/nome da primary key/PRIMARY KEY(o campo da presente tabela) 
---Sintaxe da foreign key: CONSTRAINT/nome da FK (q referencia as 2 tabelas)/foreign key(campo)/references tabela de origem(campo) 
 
 CREATE DATABASE Supermarket_Database;
 USE Supermarket_Database;
+
 
 CREATE TABLE TB_Person (
 Per_Code int identity(1,1),
@@ -17,14 +11,14 @@ Per_E_mail varchar (100) not null,
 Per_Username varchar (20) not null,
 Password varchar (20) not null,
 constraint PK_Person primary key clustered (Per_Code)
-); 
+);
 
 CREATE TABLE TB_Category (
 Cat_Code int identity (1,1),
 Cat_Name varchar (300) not null,
 constraint PK_Category primary key clustered (Cat_Code)
 );
- 
+
 CREATE TABLE TB_Position (
 Pos_Code int identity (1,1),
 Pos_Description varchar (500) not null,
@@ -43,7 +37,7 @@ Tic_Due_Date date,
 Tic_Value decimal,
 constraint PK_Ticket primary key clustered (Tic_Id)
 );
- 
+
 CREATE TABLE TB_Stored_Cards (
 StC_Id int identity (1,1),
 StC_Code int not null,
@@ -66,7 +60,7 @@ constraint PK_Loyalty_Schemes primary key (LoS_Id),
 constraint FK_Loyalty_Schemes_Loyalty_Origin foreign key (LoS_Cause_Id) references TB_Loyalty_Origin (LoO_Id)
 );
 
-  
+
 CREATE TABLE TB_Online_Order (
 OnO_Id int identity (1,1),
 OnO_Date date,
@@ -83,7 +77,10 @@ Pay_Online_Order_Id int not null,
 Pay_Date date,
 constraint FK_Payment_Online_Order foreign key (Pay_Online_Order_Id) references TB_Online_Order (OnO_Id)
 );
- 
+alter table TB_Payment add Pay_Type int not null
+alter table TB_Payment add constraint FK_Payment_Payment_Type foreign key (Pay_Type) references TB_Payment_Type (PaT_Id)
+alter table TB_Payment add constraint PK_Payment primary key (Pay_Online_Order_Id)
+
 CREATE TABLE TB_Payment_Type (
 PaT_Id int identity (1,1),
 PaT_Name varchar (30),
@@ -94,7 +91,7 @@ PaT_Card_Id int not null,
 constraint PK_Payment_Type primary key (PaT_Id),
 constraint FK_Payment_Type_Ticket foreign key (PaT_Ticket_Id) references TB_Ticket  (Tic_Id),
 constraint FK_Payment_Type_Loyalty_Schemes foreign key (PaT_Loyalty_Id) references TB_Loyalty_Schemes (LoS_Id),
-constraint FK_Payment_Type_Stored_Cards foreign key (PaT_Card_Id) references TB_Stored_Cards (StC_Id) 
+constraint FK_Payment_Type_Stored_Cards foreign key (PaT_Card_Id) references TB_Stored_Cards (StC_Id)
 );
 
 CREATE TABLE TB_Products (
@@ -105,7 +102,7 @@ constraint PK_Products primary key (Pro_Code),
 constraint FK_Products_Category foreign key (Pro_Category_Code) references TB_Category (Cat_Code)
 );
 
- 
+
 CREATE TABLE TB_Staff (
 Sta_Salary decimal,
 Sta_Position_Code int not null,
@@ -121,3 +118,11 @@ constraint PK_Cart_Items primary key (CaI_Cart_Code),
 constraint FK_Cart_Items_Cart foreign key (CaI_Cart_Code) references TB_Cart (Car_Code),
 constraint FK_Cart_Items_Products foreign key (CaI_Product_Code) references TB_Products(Pro_Code)
 );
+
+-- table name: takes TB_
+-- field name
+-- primary key name: takes PK_ (table name, because it is the table's PK)
+-- foreign key name: takes FK_ (takes the name of the relationship: name of the two tables)
+
+--The primary key has its name with reference to the table it belongs to (CONSTRAINT / primary key name / PRIMARY KEY (the field in this table)
+-- Foreign key syntax: CONSTRAINT / FK name (q references the 2 tables) / foreign key (field) / references source table (field)
