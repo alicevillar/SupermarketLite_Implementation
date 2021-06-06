@@ -1,6 +1,8 @@
 # Supermarket Lite
 
 This is a personal project to practice class diagram implementation in Python (OOP) and the database using SQL (MySQL and SQL Server). 
+
+The project is divided in three parts: 
 * Directory 1: source -> contains files with OOP in Python
 * Directory 2: sql -> contains the normalization (3fn) of the database in two versions 
 * Directory 3: diagrams -> contains: a) EER diagram created in SQL Server, b) Class diagram created with StarUML 
