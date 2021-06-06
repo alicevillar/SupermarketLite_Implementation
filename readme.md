@@ -5,7 +5,7 @@ This is a personal project to practice class diagram implementation in Python (O
 The project is divided in three parts: 
 * Directory 1: source -> contains files with OOP in Python
 * Directory 2: sql -> contains the normalization (3fn) of the database in two versions 
-* Directory 3: diagrams -> contains: a) EER diagram created in SQL Server, b) Class diagram created with StarUML 
+* Directory 3: diagrams -> contains: a) EER diagram created with SQL Server, b) Class diagram created with StarUML 
 
 ## Directory 1: Source  
 
